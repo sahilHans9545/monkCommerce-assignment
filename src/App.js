@@ -11,7 +11,7 @@ function App() {
   return (
   <>
     <div className='container'>
-        <Navbar menu={["Pricing","Testimonials"]} />
+        <Navbar menu={[["Pricing",1],["Testimonials",2]]} />
         <Hero/>
         <Chooseplan/>
         <Testimonial/>
