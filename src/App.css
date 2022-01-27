@@ -1,38 +1,275 @@
-.App {
-  text-align: center;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root{
+    --primary-color:#F53838;
+    --primary-head:#0B132A;
+    --primary-text:#4F5665;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.primary-bg{
+    background-color: var(--primary-color);
+    color: #fff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+body{
+    line-height: 30px;
+    overflow-x: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+a{
+    text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+p{
+    color: var(--primary-text);
+}
+
+h1,h2,h3,h4,h5,h6,strong{
+    color: var(--primary-head);
+}
+
+ul{
+    list-style: none;
+    padding: 0px;
+}
+
+.navbar{
+    color: var(--primary-head);
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar ul li a{
+    color: var(--primary-text);
+}
+
+.site-logo{
+    font-size: 20px;
+}
+
+.navbar .sign-btns button{
+    font-weight: 600;
+    border-radius: 50px;
+    transition: 0.2s;
+    width: 150px;
+    padding: 8px;
+}
+
+.navbar .sign-btns button:nth-child(2){
+    border: 1.3px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+.navbar .sign-btns button:hover{
+    border: 1.3px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+
+.Hero h1{
+    font-size: 3em;
+    font-weight: bolder ;
+    line-height: 70px;
+}
+
+.Hero{
+    line-height: 30px;
+}
+
+#get_started{
+    width: 250px;
+    border: none;
+    border-radius: 10px;
+    height: 60px;
+    position: relative;
+}
+
+#get_started::after{
+    content: '';
+    position: absolute;
+    width: 75%;
+    height: 100%;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(245, 56, 56, 0.35);
+    filter: blur(54px);
+    border-radius: 10px;
+}
+
+.hero img{
+    width: 100%;
+}
+
+.res{
+    background: #000;
+}
+
+
+.section-heading{
+    font-weight: 700;
+    font-size: 2.25em;
+}
+
+
+/* choose plan section */
+
+.plans{
+    justify-content: space-evenly;
+}
+
+.plan-container{
+    background: #FFFFFF;
+    border: 2px solid #DDDDDD;
+    border-radius: 10px;
+    width: 330px;
+    padding: 40px;
+    height: 700px;
+    position: relative;
+    max-width: 100%;
+}
+
+.plan-container:hover{
+    border: 2px solid var(--primary-color);
+}
+
+.plan-container ul{
+    width: fit-content;
+    margin: auto;
+}
+
+
+.plan-type{
+    font-size: 18px;
+}
+
+.price_Select{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 40px;
+}
+
+.plan-price{
+    font-size: 25px;
+}
+
+.select-plan-btn input{
+    display: none;
+}
+
+.select-plan-btn label{
+    color: var(--primary-color);
+    width: 160px;
+    height: 45px;
+    border-radius: 50px;
+    border: 2px solid var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.select-plan-btn input:checked ~ label{
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.footer{
+    background: #F8F8F8;
+}
+
+/* Testimonial Section */
+
+.testimonial-section{
+}
+
+.slider .slide{
+    width: 400px;
+    border: 2px solid #DDDDDD;
+    border-radius: 10px;
+    padding: 2rem;
+    margin: 0 25px;
+}
+
+
+
+.slide .profile-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.slide .person-name{
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.slider .active-slide{
+    border: 2px solid var(--primary-color);
+    background: #FFFFFF;
+}
+
+.slider-dot{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #DDE0E4;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.active-slider-dot{
+    width: 35px;
+    border-radius: 10px;
+    background: var(--primary-color);
+}
+
+
+.left-slide-btn,.right-slide-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: 0.2s;
+    background-color: #fff;
+}
+
+.left-slide-btn:hover,.right-slide-btn:hover{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+
+
+
+/* responsive code */
+
+@media screen and (max-width:576px) {
+    .Hero h1 {
+        font-size: 2em;
+        line-height: 45px;
+    }
+
+    .section-heading {
+        font-weight: 700;
+        font-size: 1.7rem;
+    }
+
+    .slider{
+        overflow: hidden;
+    }
 }
