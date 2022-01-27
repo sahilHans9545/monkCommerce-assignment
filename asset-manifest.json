@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/monkCommerce-assignment/static/css/main.8472b7ea.css",
-    "main.js": "/monkCommerce-assignment/static/js/main.1e85a190.js",
+    "main.css": "/monkCommerce-assignment/static/css/main.606579c5.css",
+    "main.js": "/monkCommerce-assignment/static/js/main.2bdb033e.js",
     "index.html": "/monkCommerce-assignment/index.html",
-    "main.8472b7ea.css.map": "/monkCommerce-assignment/static/css/main.8472b7ea.css.map",
-    "main.1e85a190.js.map": "/monkCommerce-assignment/static/js/main.1e85a190.js.map"
+    "main.606579c5.css.map": "/monkCommerce-assignment/static/css/main.606579c5.css.map",
+    "main.2bdb033e.js.map": "/monkCommerce-assignment/static/js/main.2bdb033e.js.map"
   },
   "entrypoints": [
-    "static/css/main.8472b7ea.css",
-    "static/js/main.1e85a190.js"
+    "static/css/main.606579c5.css",
+    "static/js/main.2bdb033e.js"
   ]
 }
